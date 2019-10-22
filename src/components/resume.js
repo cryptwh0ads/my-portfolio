@@ -4,6 +4,7 @@ import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
 
+import avatar from '../assets/avatar_resume.png'
 
 class Resume extends Component {
   render() {
@@ -13,7 +14,7 @@ class Resume extends Component {
           <Cell col={4}>
             <div style={{textAlign: 'center'}}>
               <img
-                src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/3_avatar-512.png"
+                src={avatar}
                 alt="avatar"
                 style={{height: '200px'}}
                  />

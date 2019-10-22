@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
 
+import avatar from '../assets/avatar_contact.png'
 
 class Contact extends Component {
   render() {
@@ -10,7 +11,7 @@ class Contact extends Component {
           <Cell col={6}>
             <h2>Vinicius Cruz</h2>
             <img
-              src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/3_avatar-512.png"
+              src={avatar}
               alt="avatar"
               style={{height: '250px'}}
                />
