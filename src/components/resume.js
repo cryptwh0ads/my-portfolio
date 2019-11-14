@@ -4,107 +4,92 @@ import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
 
-import avatar from '../assets/avatar_resume.png'
+import avatar from '../assets/avatar_resume.png';
 
 class Resume extends Component {
   render() {
-    return(
+    return (
       <div>
         <Grid>
           <Cell col={4}>
-            <div style={{textAlign: 'center'}}>
-              <img
-                src={avatar}
-                alt="avatar"
-                style={{height: '200px'}}
-                 />
+            <div style={{ textAlign: 'center' }}>
+              <img src={avatar} alt='avatar' style={{ height: '200px' }} />
             </div>
 
-            <h2 style={{paddingTop: '2em'}}>Vinicius Cruz</h2>
-            <h4 style={{color: 'grey'}}>Developer</h4>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-            <p>Ser um colaborador à empresa e ampliar meus conhecimentos para aprimoramento profissional.</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <h2 style={{ paddingTop: '2em' }}>Vinicius Cruz</h2>
+            <h4 style={{ color: 'grey' }}>Full Stack Web Developer</h4>
+            <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
+            <p>
+              Ser um colaborador à empresa e ampliar meus conhecimentos para
+              aprimoramento profissional.
+            </p>
+            <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
             <h5>Endereço</h5>
             <p>Av. Graciela Flores de Piteri</p>
             <h5>Telefone</h5>
             <p>(11) 98872-9271</p>
             <h5>Email</h5>
             <p>wh0adscrypt@gmail.com</p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
           </Cell>
-          <Cell className="resume-right-col" col={8}>
+          <Cell className='resume-right-col' col={8}>
             <h2>Formação</h2>
-
 
             <Education
               startYear={2019}
               endYear={2020}
-              schoolName="FIAP"
-              schoolDescription="Cybersecurity"
-               />
+              schoolName='FIAP'
+              schoolDescription='Cybersecurity'
+            />
 
-               <Education
-                 startYear={2019}
-                 endYear={2020}
-                 schoolName="UNICIV"
-                 schoolDescription="Redes de Computadores e Segurança"
-                  />
+            <Education
+              startYear={2019}
+              endYear={2020}
+              schoolName='UNICIV'
+              schoolDescription='Redes de Computadores e Segurança'
+            />
 
-               <Education
-                 startYear={2019}
-                 endYear={2020}
-                 schoolName="UNICIV"
-                 schoolDescription="Engenharia de Software: Aplicada a Qualidade de Software e TDD"
-                  />
-                <hr style={{borderTop: '3px solid #e22947'}} />
+            <Education
+              startYear={2019}
+              endYear={2020}
+              schoolName='UNICIV'
+              schoolDescription='Engenharia de Software: Aplicada a Qualidade de Software e TDD'
+            />
+            <hr style={{ borderTop: '3px solid #e22947' }} />
 
-              <h2>Experiência</h2>
+            <h2>Experiência</h2>
 
             <Experience
               startYear={2017}
               endYear={2018}
-              jobName="PREFEITURA MUNICIPAL DE ITAPEVI"
-              jobDescription="Tecnico de Informatica"
-              />
+              jobName='PREFEITURA MUNICIPAL DE ITAPEVI'
+              jobDescription='Tecnico de Informatica'
+            />
 
-              <Experience
-                startYear={2018}
-                endYear={2018}
-                jobName="+NET & TELECOM"
-                jobDescription="Tecnico de Telecom"
-                />
+            <Experience
+              startYear={2018}
+              endYear={2018}
+              jobName='+NET & TELECOM'
+              jobDescription='Tecnico de Telecom'
+            />
 
-              <Experience
-                startYear={2019}
-                endYear={2019}
-                jobName="Proteus Information Security Services"
-                jobDescription="Analista de Segurança da Informação"
-                />
-              <hr style={{borderTop: '3px solid #e22947'}} />
-              <h2>Skills</h2>
-              <Skills
-                skill="javascript"
-                progress={55}
-                />
-                <Skills
-                  skill="HTML/CSS"
-                  progress={70}
-                  />
-                  <Skills
-                    skill="NodeJS"
-                    progress={50}
-                    />
-                    <Skills
-                      skill="React"
-                      progress={30}
-                      />
-
-
+            <Experience
+              startYear={2019}
+              endYear={2019}
+              jobName='Proteus Information Security Services'
+              jobDescription='Analista de Segurança da Informação'
+            />
+            <hr style={{ borderTop: '3px solid #e22947' }} />
+            <h2>Skills</h2>
+            <Skills skill='Javascript' progress={60} />
+            <Skills skill='SQL' progress={70} />
+            <Skills skill='HTML/CSS' progress={70} />
+            <Skills skill='NodeJS' progress={50} />
+            <Skills skill='React' progress={40} />
           </Cell>
         </Grid>
       </div>
-    )
+    );
   }
 }
 

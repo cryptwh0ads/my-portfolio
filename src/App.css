@@ -1,13 +1,21 @@
 .header-color {
-  background: #7F00FF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #7f00ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e100ff,
+    #7f00ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e100ff,
+    #7f00ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .landing-grid {
-  background: #7F00FF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #7f00ff;
+  background: -webkit-linear-gradient(to right, #e100ff, #7f00ff);
+  background: linear-gradient(to right, #e100ff, #7f00ff);
   text-align: center;
   position: fixed;
   top: 0;
@@ -22,7 +30,7 @@
 
 /* Resume Page css */
 .resume-right-col {
-  background: #27221F;
+  background: #27221f;
   color: white;
   padding: 2em;
 }
@@ -68,7 +76,6 @@
   padding-right: 5rem;
 }
 
-
 /* contact page css */
 
 .avatar-img {
@@ -78,7 +85,7 @@
 
 .banner-text {
   background-color: black;
-  opacity: .8;
+  opacity: 0.8;
   width: 75%;
   margin: auto;
   border-radius: 10px;
